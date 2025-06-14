@@ -29,7 +29,11 @@ body {
 }
 
 .flex-item {
-    width: 100px;
+    /*flex-basis: 300px; /* Set the base size of the flex items similar to using width*/
+    /*flex-grow: 1; /* Allow all flex-items to grow and fill available space at the same rate*/
+    /*flex-shrink: 1; /* Allow all flex-items to shrink if necessary at the same rate */
+    /*flex: 1 0 100px; /* Shorthand for flex-grow, flex-shrink, and flex-basis using each property at the same time.*/
+    flex: 1; /* Shorthand for flex-grow, flex-shrink, and flex-basis with default values  flex*/
     height: 100px;
     background-color: #254dc4;
     margin: 10px;
@@ -41,12 +45,24 @@ body {
 
 .flex-item:nth-child(1) {
     /*align-self: start; /* Align this item to the start of the flex container */
+    /*order: 2; /* Change the order of this item to appear second */
+    /*flex-grow: 1; /* Allow this item to grow and fill available space, flex-grow default number is zero. */
+    /*flex-shrink: 1; /* Allow this item to shrink if necessary */
 }   
 
 .flex-item:nth-child(2) {
-    /*align-self: center; /* Align this item to the center of the flex container */   
+    /*align-self: center; /* Align this item to the center of the flex container */ 
+    /*order: 3; /* Change the order of this item to appear third */
+    /*flex-basis: 200px; /* Change the base size of this item to 200px */
+    /*flex-grow: 3; /* Allow this item to grow more than the first item */
+    /*flex-basis: 200px; /* Set the base size of this item to 200px */
+    /*flex-shrink: 2; /* Allow this item to shrink more than the first item */
 }
 
 .flex-item:nth-child(3) {
     /*align-self: end; /* Align this item to the end of the flex container */
+    /*order: 1; /* Change the order of this item to appear first */
+    /*flex-grow: 2; /* Allow this item to grow more than the first and second items */
+    /*flex-shrink: 3; /* Allow this item to shrink the most */
+    
 }

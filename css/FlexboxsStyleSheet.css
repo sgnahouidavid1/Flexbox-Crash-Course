@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Poppins, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #a1c3ff;
+}
+.header {
+    background-color: #0151cc;
+    color: #fff;
+    min-height: 400px;
+   
+}
+.header h1 {
+    font-size: 3rem;/* Font size for the main heading */
+    /* In CSS rem stands for “root em” (rem) and is a relative unit of measurement that is based on the font size of the root element (html).
+        The rem unit is similar to the em unit, but instead of being relative to the font size of the parent element, 
+        it is always relative to the font size of the root element.
+        This means that 1rem equals the font size of the html element, which for most browsers has a default value of 16px. 
+        Using rem can help ensure consistency of font size and spacing throughout your UI.*/
+        font-weight: bold; /* Make the main heading bold */
+        line-height: 1.2; /* Set line height for the main heading */
+}
+.header .container {
+    display: flex; /* Enable flexbox layout for the header */ 
+    align-items: center; /* Center items vertically */
+    justify-content: space-between; /* Space between the logo and the navigation */
+}
+.header img {
+    max-width: 400px; /* Set a maximum width for the image */
+}
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    
+}
+.navbar a:hover {
+    color: lightblue;
+}
+img {
+    max-width: 100%;
+}
+h1,h2 {
+    margin-bottom: 15px;
+}
+ul {
+    list-style: none;
+}
+.boxes .container {
+    display: flex; /* Enable flexbox layout for the boxes */
+    justify-content: space-between; /* Space between the boxes */
+}
+.boxes .container .box:nth-child(1) i {
+    margin-right: 10px;
+}
+.boxes .container .box:nth-child(2)  i {
+    margin-right: 10px;
+}
+.boxes .container .box:nth-child(3) i {
+    margin-right: 10px;
+}
+
+.box {
+   flex: 1; 
+   background: #0a51cc;
+   color: #fff;
+   border-radius: 10px; /* Add rounded corners to the box */
+   margin-top: 20px; /* Add margin on top of the box */
+   margin-left: 10px; /* Add margin on the left of the box */
+   margin-right: 10px; /* Add margin on the right of the box */
+   box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6); /* Add a subtle shadow to the box */
+   padding-left:20px; /* Add padding inside the box */
+   padding-right: 20px; /* Add padding inside the box */
+   padding-top: 15px; /* Add padding inside the box */
+   padding-bottom: 15px; /* Add padding inside the box */
+}
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto; /* Center the container */
+    padding: 0 30px; /* Add padding 30px to the container on the left and right */ 
+}
+
+.navbar {
+    background: #3474e6;
+    color: #fff;
+    height: 60px;
+    padding: 0 30px; /* Add padding 30px to the navbar on the left and right */
+}
+.navbar .navbar-logo {
+   font-size: x-large; 
+   font-weight: bold;
+}
+
+.navbar .navbar-container {
+    display: flex;
+    justify-content: space-between; /* Space between menu items */
+    align-items: center; /* Center items vertically */
+    height: 100%; /* Ensure the container takes full height of the navbar */
+}
+
+.navbar .navbar-menu  {
+    display: flex;  
+}
+
+.navbar .navbar-menu li {
+    margin-left: 20px; /* Add space between menu items */
+}
+
+@media (max-width: 768px) { /* Media query for smaller screens */
+    /* First way to adjust the layout for smaller screens*/
+    /* Adjust the header layout for smaller screens */
+    .header .container {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center; /* Center items horizontally */
+        padding-top: 20px;
+    }
+    /* Second way to adjust the layout for smaller screens*/
+    .boxes .container {
+        display: block; /* Change to block layout for smaller screens */
+        text-align: center;
+    }
+}
