@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.flex-container {
+    /*height: 500px;/* Set a fixed height for the container */
+    display: flex; /* Enable flexbox layout horizontally by defualt*/
+    /*flex-direction: column; /* Change the direction to column */
+    /*flex-direction: row; /* Change the direction to row */
+    background-color: #f4f4f4f4;
+    /* Always is on the main axis */
+    /*justify-content: end; /* Align items to the end of the container */
+    /*justify-content: center; /* Center items horizontally */
+    /* justify-content: space-around; /* Distribute items evenly with space around them */
+    /*justify-content: space-between; /* Distribute items evenly with space between them */
+    /*justify-content: start; /* Align items to the start of the container */
+    /* Always is on the cross axis */
+    /*align-items: center; /* Align items vertically in the center */
+    /*align-items: start; /* Align items to the start of the flex container */
+    /*align-items: end; /* Align items to the end of the flex container */
+
+    /*flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+}
+
+.flex-item {
+    width: 100px;
+    height: 100px;
+    background-color: #254dc4;
+    margin: 10px;
+    color: white;
+    display: flex; /* Enable flexbox layout for the item */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+}
+
+.flex-item:nth-child(1) {
+    /*align-self: start; /* Align this item to the start of the flex container */
+}   
+
+.flex-item:nth-child(2) {
+    /*align-self: center; /* Align this item to the center of the flex container */   
+}
+
+.flex-item:nth-child(3) {
+    /*align-self: end; /* Align this item to the end of the flex container */
+}
